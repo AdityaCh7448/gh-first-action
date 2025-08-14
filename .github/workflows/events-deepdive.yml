@@ -1,4 +1,4 @@
-name: output information
+name: events deep dive
 on :
     pull_request:
         types:
