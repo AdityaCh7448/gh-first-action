@@ -4,7 +4,18 @@ on :
         types:
             - opened
             - edited
-    workflow_dispatch:        
+        branches:    ## can use opposit of branches i.e branches-ignore
+            -  main
+            - 'feat/**'
+            - 'dev-*'
+    workflow_dispatch:
+    push:
+        branches:
+            -  main
+            - 'feat/**'
+            - 'dev-*'
+        paths:            ## can use opposit of paths i.e paths-ignore 
+            - '.github\workflows\*'
 jobs:
     info:
         runs-on: ubuntu-latest
