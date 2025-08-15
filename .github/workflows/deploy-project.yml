@@ -1,7 +1,13 @@
 name: deploy project
 on: push
+env:
+  spnname: myspn
 jobs:
     test:
+        env:
+          clientid: 15131531351jhj
+          subscription id: hchgjhjbk6334313
+          clientsecreat: dthxtrdytf161313
         runs-on: ubuntu-latest
         steps:
             - name: Get code
